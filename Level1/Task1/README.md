@@ -10,9 +10,19 @@ Check out my work and get in touch!
 
 ## 📹 Project Demo
 
-Watch the demo video on YouTube:
+<p align="center">
+  <a href="https://youtu.be/botig5TppNE" target="_blank">
+    <img src="https://img.youtube.com/vi/botig5TppNE/0.jpg" 
+         alt="Project Demo Video" 
+         width="600" 
+         style="border-radius:10px;"/>
+  </a>
+</p>
 
-[![Watch the video](https://img.youtube.com/vi/botig5TppNE/0.jpg)](https://youtu.be/botig5TppNE)
+<p align="center">
+  ▶️ <a href="https://youtu.be/botig5TppNE" target="_blank">Watch the full video on YouTube</a>
+</p>
+
 
 ---
 
