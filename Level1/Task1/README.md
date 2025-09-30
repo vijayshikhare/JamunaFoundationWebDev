@@ -8,6 +8,14 @@ Check out my work and get in touch!
 
 ---
 
+## 📹 Project Demo
+
+Watch the demo video on YouTube:
+
+[![Watch the video](https://img.youtube.com/vi/botig5TppNE/0.jpg)](https://youtu.be/botig5TppNE)
+
+---
+
 ## 🌟 Highlights
 
 - **Mental Health Chatbot:** NLP-powered chatbot supporting students’ mental health queries.  
