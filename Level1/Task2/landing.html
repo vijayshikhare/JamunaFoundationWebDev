@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jamuna Foundation – Tree Plantation Campaign</title>
+  <link rel="stylesheet" href="landing.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-container">
+    <div class="brand">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Tree Plantation Logo">
+      </div>
+      <div>
+        <h1 class="campaign-name">Tree Plantation Drive</h1>
+        <p class="tagline">Plant Trees, Breathe Life</p>
+      </div>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" aria-label="Toggle Menu">
+      ☰
+    </button>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#contact-register">Register</a></li>
+        <li><a href="#contact-register">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="container hero-container">
+    <div class="hero-text">
+      <h1>🌳 Let’s Make Our Planet Greener</h1>
+      <p>Be part of our <strong>Tree Plantation Drive</strong> and contribute to a sustainable future.
+        Every tree planted helps fight climate change and improve biodiversity.</p>
+      <ul class="hero-points">
+        <li>🌱 Increase green cover</li>
+        <li>🌱 Improve air quality</li>
+        <li>🌱 Support local communities</li>
+      </ul>
+      <a href="#contact-register" class="btn btn-primary hero-btn">Register Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="./assets/tp.png" alt="Tree plantation drive illustration" />
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about section">
+  <div class="container about-container">
+    <div class="about-text">
+      <h3>🌱 About the Campaign</h3>
+      <p>
+        Jamuna Foundation’s <strong>Tree Plantation Drive</strong> unites volunteers to create green
+        belts in urban and rural areas. Our mission is to plant, nurture, and protect trees —
+        improving air quality, conserving biodiversity, and fostering community participation.
+      </p>
+      <p>
+        Together, we’re reducing the carbon footprint and making our communities healthier and greener
+        for future generations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Impact Section -->
+<section id="impact" class="impact section">
+  <div class="container">
+    <h3>🌿 Our Impact So Far</h3>
+    <p class="impact-subtitle">Thanks to our volunteers, we’ve been able to create a greener and healthier environment.</p>
+    <div class="impact-grid">
+      <div class="card">
+        <h4>5,000+</h4>
+        <p>Trees Planted</p>
+      </div>
+      <div class="card">
+        <h4>50+</h4>
+        <p>Communities Engaged</p>
+      </div>
+      <div class="card">
+        <h4>300+</h4>
+        <p>Volunteers</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact & Registration Section -->
+<section id="contact-register" class="contact-register section">
+  <div class="container contact-register-container">
+    <!-- Left: Contact Info -->
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>We’re here to answer any questions and help you join our Tree Plantation Drive.</p>
+      <p><strong>Email:</strong> <a href="mailto:info@jamunafoundation.org">info@jamunafoundation.org</a></p>
+      <p><strong>Phone:</strong> +91 xxxxx xxxxx</p>
+      <p><strong>Address:</strong> Jalgaon, Maharashtra, India</p>
+    </div>
+
+    <!-- Right: Registration Form -->
+    <div class="register-form-container">
+      <h3>Register to Volunteer</h3>
+      <form class="register-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-container">
+    <p>&copy; <span id="year"></span> Jamuna Foundation. All Rights Reserved.</p>
+    <p class="developer-credit">
+      Developed by <a href="https://github.com/vijayshikhare" target="_blank" rel="noopener noreferrer">Vijay Shikhare</a>
+    </p>
+  </div>
+</footer>
+
+
+<script>
+  // set the copyright year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
+  // 👇 add this line to get all nav links
+  const navLinks = document.querySelectorAll('.main-nav a');
+
+  // toggle menu open/close
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+    menuToggle.classList.toggle('active'); // toggle icon style
+  });
+
+  // close menu when clicking a nav link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('show');
+      menuToggle.classList.remove('active'); // reset icon
+    });
+  });
+</script>
+
+</body>
+</html>
