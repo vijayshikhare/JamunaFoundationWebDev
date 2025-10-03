@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Calculator - Jamuna Foundation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>🌱 Jamuna Foundation</h1>
+      <p>Donation Impact Calculator</p>
+    </div>
+  </header>
+
+  <!-- Calculator Section -->
+  <section class="calculator-section">
+    <div class="container">
+      <h2>Make Your Donation Count</h2>
+      <p>Every dollar plants hope. See the difference you create! 💚</p>
+
+      <div class="calculator">
+        <!-- Display -->
+        <input type="text" id="display" class="display" readonly>
+
+        <!-- Buttons Grid -->
+        <div class="buttons">
+          <button class="btn" data-value="7">7</button>
+          <button class="btn" data-value="8">8</button>
+          <button class="btn" data-value="9">9</button>
+          <button class="btn clear">C</button>
+
+          <button class="btn" data-value="4">4</button>
+          <button class="btn" data-value="5">5</button>
+          <button class="btn" data-value="6">6</button>
+          <button class="btn delete">⌫</button>
+
+          <button class="btn" data-value="1">1</button>
+          <button class="btn" data-value="2">2</button>
+          <button class="btn" data-value="3">3</button>
+          <button class="btn" data-value="0">0</button>
+
+          <button class="btn impact">🌱 Impact</button>
+          <button class="btn calculate">=</button>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="result" id="result"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Jamuna Foundation. All Rights Reserved.</p>
+    <small>Developed by Vijay Shikhare</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #2e7d32;
+  --accent: #66bb6a;
+  --bg-gradient: linear-gradient(135deg, #a8e063, #56ab2f);
+  --glass: rgba(255, 255, 255, 0.15);
+  --white: #fff;
+  --dark: #222;
+}
+
+/* Header */
+.header {
+  background: var(--bg-gradient);
+  color: var(--white);
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Calculator Section */
+.calculator-section {
+  padding: 60px 20px;
+  background: #f5fbe7;
+  text-align: center;
+}
+
+.calculator-section h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.calculator-section p {
+  margin-bottom: 30px;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+/* Calculator Box */
+.calculator {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 20px;
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.8s ease-in-out;
+}
+
+/* Display */
+.display {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3rem;
+  text-align: right;
+  background: #ffffffcc;
+  color: #333;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  padding: 18px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: var(--accent);
+  color: var(--white);
+  transition: transform 0.15s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn.clear {
+  background: #e53935;
+}
+
+.btn.delete {
+  background: #f57c00;
+}
+
+.btn.impact {
+  grid-column: span 2;
+  background: #1b5e20;
+}
+
+/* Result */
+.result {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+  min-height: 25px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  background: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 15px;
+}
+
+.footer small {
+  display: block;
+  margin-top: 5px;
+  color: #bbb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .calculator {
+    width: 100%;
+  }
+  .display {
+    font-size: 1.1rem;
+  }
+}
